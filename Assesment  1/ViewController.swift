@@ -16,10 +16,17 @@ class ViewController: UIViewController {
     }
 
     @IBOutlet weak var label: UILabel!
-    @IBAction func textField(_ sender: Any) {
-   
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var button: UIButton!
+    
+    
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+       textField.text = textInput
+        label.text = textInput
+        textField.text = ""
     }
-    @IBAction func button(_ sender: Any) {
-    }
+    
+    var textInput = ""
 }
 

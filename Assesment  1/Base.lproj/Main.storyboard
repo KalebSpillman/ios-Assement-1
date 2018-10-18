@@ -22,37 +22,41 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="I3g-vr-zfd"/>
-                                </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wi-Vp-JBW">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wi-Vp-JBW">
                                 <rect key="frame" x="164.5" y="617" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.3735832254" green="0.0" blue="0.0043503416859999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="0.71708443320000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3u-lv-Bxi"/>
-                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1i-0j-aIg"/>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UCH-Lw-dSP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMR-WU-HAP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMR-WU-HAP">
                                 <rect key="frame" x="166.5" y="49" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.3735832254" green="0.0" blue="0.0043503416859999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.71708443320000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.373583225388601" green="0.0" blue="0.0043503416859310886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="WMR-WU-HAP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="E2N-H5-tmf"/>
                             <constraint firstItem="e3f-Xp-UL1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KgL-sp-qA8"/>
                             <constraint firstItem="WMR-WU-HAP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZ3-hZ-GNE"/>
                             <constraint firstItem="3wi-Vp-JBW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mnV-WJ-O4i"/>
                             <constraint firstItem="e3f-Xp-UL1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n7J-a9-Ee0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3wi-Vp-JBW" secondAttribute="bottom" constant="20" id="t7h-mj-92F"/>
                             <constraint firstItem="WMR-WU-HAP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wa8-di-R9O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="3wi-Vp-JBW" id="mVa-tA-2lq"/>
                         <outlet property="label" destination="WMR-WU-HAP" id="Ztu-xJ-138"/>
+                        <outlet property="textField" destination="e3f-Xp-UL1" id="2yQ-di-el5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
